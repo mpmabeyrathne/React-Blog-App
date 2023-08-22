@@ -1,7 +1,16 @@
 $light-green: #b9e7e7;
 
 .app {
+  display: flex;
+  justify-content: center;
+
   .container {
+    width: 1024px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
     //LOGIN and REGISTER
     .auth {
       display: flex;
@@ -49,6 +58,53 @@ $light-green: #b9e7e7;
         font-style: 20px;
         color: red;
         text-align: center;
+      }
+    }
+
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+        .links {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          h6 {
+            font-style: 16px;
+            font-weight: 300;
+          }
+
+          .span {
+            cursor: pointer;
+          }
+
+          .write {
+            background-color: $light-green;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            font-weight: 300;
+            border: 1px solid white;
+
+            &:hover {
+              color: $light-green;
+              background-color: white;
+              border: 1px solid $light-green;
+            }
+          }
+        }
       }
     }
   }

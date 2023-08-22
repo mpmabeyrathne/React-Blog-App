@@ -39,6 +39,17 @@ $light-green: #b9e7e7;
         color: white;
         cursor: pointer;
       }
+
+      span {
+        font-style: 20px;
+        text-align: center;
+      }
+
+      p {
+        font-style: 20px;
+        color: red;
+        text-align: center;
+      }
     }
   }
 }

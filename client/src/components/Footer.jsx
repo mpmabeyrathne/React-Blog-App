@@ -1,7 +1,12 @@
 import React from "react";
+import logo from "../img/logo.png";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (<footer>
+    <img src={logo} />
+    <span>Pasindu maduwantha</span>
+  </footer>
+  );
 };
 
 export default Footer;

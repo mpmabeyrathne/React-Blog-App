@@ -1,5 +1,10 @@
 $light-green: #b9e7e7;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -187,6 +192,41 @@ $light-green: #b9e7e7;
             }
           }
         }
+      }
+    }
+
+    //SINGLE PAGE
+    .single {
+      display: flex;
+      gap: 50px;
+
+      .content {
+        flex: 5;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+        .user {
+          display: flex;
+          gap: 10px;
+          font-style: 14px;
+          align-items: center;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+      .menu {
+        flex: 2;
       }
     }
   }
